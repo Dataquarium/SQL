@@ -1,0 +1,21 @@
+create table desserts(id integer primary key,pastry text,flavor text,front integer,price integer);
+
+insert into desserts values(1,"churro","cinnamon",1,5.99);
+insert into desserts values(2,"sbc churro","cinnamon & strawberry cheese cake",1,6.99);
+insert into desserts values(3,"PB churro","cinnamon & peanutbutter",1,6.99);
+insert into desserts values(4,"himalayan churro","cinnamon & salted caramel",1,6.99);
+insert into desserts values(5,"apple pie","cinnamon & apples",2,9.99);
+insert into desserts values(6,"Crepe","chocolatey",3,3.99);
+insert into desserts values(7,"pain au chocolat","chocolatey",3,4.99);
+insert into desserts values(8,"sesame ball","sweet & nutty",5,0.99);
+insert into desserts values(9,"red bean ball","sweet & nutty",5,0.99);
+insert into desserts values(10,"eclair","chocolatey",2,2.99);
+insert into desserts values(11,"Truffle","chocolatey",2,1.99);
+insert into desserts values(12,"candied orange peels","sweet & fruity",4,1.99);
+insert into desserts values(13,"candied apple","caramel & apples",4,9.99);
+insert into desserts values(14,"peach stick","fruity & sweet",4,5.99);
+insert into desserts values(15,"Golden Front","Sweet",6,24.99);
+
+select * from desserts order by front;
+select sum(price)from desserts;
+select * from desserts order by flavor;
